@@ -1,0 +1,35 @@
+<button class="fe-fab" id="fe-open" title="Rozszerzenia (FaceitExt)" aria-label="Rozszerzenia">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4a2 2 0 0 0-2 2v3.8h1.5a2.7 2.7 0 0 1 0 5.4H2V20a2 2 0 0 0 2 2h3.8v-1.5a2.7 2.7 0 0 1 5.4 0V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z"/></svg>
+  <span class="fe-badge" id="fe-badge" hidden>0</span>
+</button>
+
+<div class="fe-overlay" id="fe-overlay" hidden>
+  <section class="fe-modal" role="dialog" aria-modal="true" aria-labelledby="fe-title">
+    <header class="fe-head">
+      <div>
+        <h2 id="fe-title">Rozszerzenia <span class="fe-accent">FaceitExt</span></h2>
+        <p class="fe-sub">Wtyczki Chrome w kliencie FACEIT</p>
+      </div>
+      <button class="fe-icon-btn" id="fe-close" aria-label="Zamknij">&#x2715;</button>
+    </header>
+
+    <form class="fe-add" id="fe-form">
+      <input id="fe-url" type="url" placeholder="Wklej link z Chrome Web Store…" autocomplete="off" spellcheck="false" />
+      <button type="submit" class="fe-btn fe-btn-primary" id="fe-install">Zainstaluj</button>
+    </form>
+
+    <div class="fe-drop" id="fe-drop" tabindex="0">
+      <strong>Upuść plik .zip / .crx</strong> lub <span class="fe-link">wybierz z dysku</span>
+    </div>
+
+    <div class="fe-status" id="fe-status" hidden></div>
+
+    <ul class="fe-list" id="fe-list"></ul>
+    <p class="fe-empty" id="fe-empty" hidden>Brak zainstalowanych rozszerzeń.</p>
+
+    <footer class="fe-foot">
+      <span>Zmiany w content-scriptach działają po odświeżeniu strony.</span>
+      <button class="fe-btn fe-btn-ghost" id="fe-reload">Odśwież stronę</button>
+    </footer>
+  </section>
+</div>
